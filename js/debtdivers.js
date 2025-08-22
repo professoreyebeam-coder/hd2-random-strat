@@ -233,15 +233,15 @@ const submitMissionReport = async (isMissionSucceeded) => {
     let deathsDifficultyModifier = 10;
     let accidentalsDifficultyModifier = 20;
     const starsEarnedModifier =
-      if missionDifficultyInput <=7
+      if parseInt(missionDifficultyInput.value, 10) <=7
       parseInt(starsEarnedInput.value, 10) *
       parseInt(missionDifficultyInput.value, 10) *
       2
-      else if missionDifficultyInput = 8 || missionDifficultyInput = 9
+      else if parseInt(missionDifficultyInput.value, 10) = 8 || parseInt(missionDifficultyInput.value, 10) = 9
       parseInt(starsEarnedInput.value, 10) *
       (3+parseInt(missionDifficultyInput.value, 10) *
       2)
-      else if missionDifficultyInput >= 10
+      else if parseInt(missionDifficultyInput.value, 10) >= 10
         parseInt(starsEarnedInput.value, 10) *
       (5+parseInt(missionDifficultyInput.value, 10) *
       2);
