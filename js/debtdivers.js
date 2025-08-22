@@ -232,20 +232,20 @@ const submitMissionReport = async (isMissionSucceeded) => {
    if (isMissionSucceeded) {
     let deathsDifficultyModifier = 10;
     let accidentalsDifficultyModifier = 20;
-    const starsEarnedModifier = {
-      if parseInt(missionDifficultyInput.value, 10) =<7
+    const starsEarnedModifier = 
+      if parseInt(missionDifficultyInput.value, 10) =< 7
       parseInt(starsEarnedInput.value, 10) *
       parseInt(missionDifficultyInput.value, 10) *
-      2
+      2;
       else if parseInt(missionDifficultyInput.value, 10) = 8 || parseInt(missionDifficultyInput.value, 10) = 9
       parseInt(starsEarnedInput.value, 10) *
       (3+parseInt(missionDifficultyInput.value, 10) *
-      2)
+      2);
       else if parseInt(missionDifficultyInput.value, 10) => 10
         parseInt(starsEarnedInput.value, 10) *
       (5+parseInt(missionDifficultyInput.value, 10) *
       2);
-}
+
     const superSamplesModifier = superSamplesCollectedInput.value * 12;
 
     // if (difficulty === 'Easy') {
