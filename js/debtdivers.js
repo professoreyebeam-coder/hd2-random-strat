@@ -242,7 +242,7 @@ if (missionDifficultyValue >= 10) {
 } else if (missionDifficultyValue === 8 || missionDifficultyValue === 9) {
     starsEarnedModifier = starsEarnedValue * (3 + (missionDifficultyValue * 2));
 } else {
-    starsEarnedModifier = starsEarnedValue * (parseInt(missionDifficultyInput.value, 10) * 2);
+    starsEarnedModifier = starsEarnedValue * missionDifficultyValue * 2;
 }
 
     const superSamplesModifier = superSamplesCollectedInput.value * 12;
