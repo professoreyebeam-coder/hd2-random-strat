@@ -239,7 +239,7 @@ const missionDifficultyValue = parseInt(missionDifficultyInput.value, 10);
 
 if (missionDifficultyValue >= 10) {
     starsEarnedModifier = starsEarnedValue * (5 + (missionDifficultyValue * 2));
-} else if (missionDifficultyValue === 8 || missionDifficultyValue === 9) {
+} else if (missionDifficultyValue == 8 || missionDifficultyValue == 9) {
     starsEarnedModifier = starsEarnedValue * (3 + (missionDifficultyValue * 2));
 } else {
     starsEarnedModifier = starsEarnedValue * missionDifficultyValue * 2;
