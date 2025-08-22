@@ -247,7 +247,7 @@ const submitMissionReport = async (isMissionSucceeded) => {
       2);
 
     const superSamplesModifier = superSamplesCollectedInput.value * 12;
-}
+
     // if (difficulty === 'Easy') {
     //   deathsDifficultyModifier = 1;
     //   accidentalsDifficultyModifier = 1;
