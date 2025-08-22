@@ -229,25 +229,25 @@ const uploadSaveData = async () => {
 const submitMissionReport = async (isMissionSucceeded) => {
   await unequipAllItems(true);
 
-  if (isMissionSucceeded) {
+   if (isMissionSucceeded) {
     let deathsDifficultyModifier = 10;
     let accidentalsDifficultyModifier = 20;
-    
-    let starsEarnedModifier;
-    const starsEarnedValue = parseInt(starsEarnedInput.value, 10);
-    const missionDifficultyValue = parseInt(missionDifficultyInput.value, 10);
-
-    if (missionDifficultyValue === 10) {
-        starsEarnedModifier = starsEarnedValue * (5 + (missionDifficultyValue * 2));
-    } else if (missionDifficultyValue === 8 || missionDifficultyValue === 9) {
-        starsEarnedModifier = starsEarnedValue * (3 + (missionDifficultyValue * 2));
-    } else {
-        starsEarnedModifier = starsEarnedValue * (missionDifficultyValue * 2);
-    }
+    const starsEarnedModifier =
+      if missionDifficultyInput <=7
+      parseInt(starsEarnedInput.value, 10) *
+      parseInt(missionDifficultyInput.value, 10) *
+      2
+      else if missionDifficultyInput = 8 || missionDifficultyInput = 9
+      parseInt(starsEarnedInput.value, 10) *
+      (3+parseInt(missionDifficultyInput.value, 10) *
+      2)
+      else if missionDifficultyInput >= 10
+        parseInt(starsEarnedInput.value, 10) *
+      (5+parseInt(missionDifficultyInput.value, 10) *
+      2);
 
     const superSamplesModifier = superSamplesCollectedInput.value * 12;
 }
-
     // if (difficulty === 'Easy') {
     //   deathsDifficultyModifier = 1;
     //   accidentalsDifficultyModifier = 1;
