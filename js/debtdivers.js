@@ -236,11 +236,11 @@ const submitMissionReport = async (isMissionSucceeded) => {
       if parseInt(missionDifficultyInput.value, 10) = 8 || parseInt(missionDifficultyInput.value, 10) = 9
       parseInt(starsEarnedInput.value, 10) *
       (3+parseInt(missionDifficultyInput.value, 10) *
-      2);
+      2)
       else if parseInt(missionDifficultyInput.value, 10) => 10
         parseInt(starsEarnedInput.value, 10) *
       (5+parseInt(missionDifficultyInput.value, 10) *
-      2);
+      2)
       else
         parseInt(starsEarnedInput.value, 10) *
       parseInt(missionDifficultyInput.value, 10) *
